@@ -37,9 +37,10 @@ export default function Leaderboard() {
         {data.map((item, index) => (
           <div
             key={item.name}
-            className={`${
-              index === 0 ? "bg-yellow-300 text-black" : "bg-white/10 text-white"
-            } border-2 border-white shadow-xl rounded-2xl p-4 animate-fade-in`}
+            className={\`
+              \${index === 0 ? "bg-yellow-300 text-black" : "bg-white/10 text-white"}
+              border-2 border-white shadow-xl rounded-2xl p-4 animate-fade-in
+            \`}
           >
             <div className="flex flex-col items-center gap-2">
               <div className="text-5xl">{item.avatar}</div>
